@@ -3,9 +3,8 @@
 
 function scope() {
   if(true) {
+    console.log(a); //undefined
     const a = 123;
-
   }
-  console.log(a); //a is not defined (error)
 }
 scope();
