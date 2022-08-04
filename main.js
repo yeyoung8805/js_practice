@@ -2,8 +2,8 @@
 //var, let, const
 
 function scope() {
+  console.log(a); //Error : a is not defined
   if(true) {
-    console.log(a); //undefined
     const a = 123;
   }
 }
