@@ -3,11 +3,4 @@
 const a = 1;
 const b = 3;
 
-console.log(a === b); //result : false  // 일치연산자 ===
-
-function isEqual(x,y) {
-  return x === y;
-}
-
-console.log(isEqual(1,1)); //result true
-console.log(isEqual(2,'2')); //result false => number, string is different
+console.log(a !== b); //result true //서로가 다른 것인지를 확인해주는 연산자 !==
