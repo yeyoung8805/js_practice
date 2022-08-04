@@ -1,7 +1,5 @@
-// 산술 연산자(arithmetic operator)
+// 할당 연산자(assignment operator)
 
-console.log(1 + 2);
-console.log(5 - 7);
-console.log(3 * 4);
-console.log(10 / 2);
-console.log(7 % 5);
+const a = 2; // = 가 할당연산자
+let b = 2; //const는 재할당 불가, let은 재할당 가능 
+console.log(b);
