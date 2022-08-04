@@ -9,4 +9,4 @@ const b = sum(4, 12);
 
 console.log(sum(1, 3));
 console.log(sum(4, 12));
-console.log(sum(1, 3) + sum(4, 12));
+console.log(sum(1, 3) + sum(4, 12)); //함수 계속 호출하는 비효율적인 구조
