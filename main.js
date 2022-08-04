@@ -7,3 +7,5 @@ if(a) {
 }else {
   console.log('거짓');
 }
+
+console.log(a ? '참' : '거짓'); // result 참
