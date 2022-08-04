@@ -4,7 +4,8 @@
 function scope() {
   if(true) {
     const a = 123;
-    console.log(a);
+
   }
+  console.log(a); //a is not defined (error)
 }
 scope();
