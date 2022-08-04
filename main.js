@@ -1,6 +1,9 @@
-// 비교 연산자(comparison operator)
+// 논리 연산자(logical operator)
 
-const a = 13;
-const b = 13;
+const a = 1 === 1;
+const b = 'AB' === 'AB';
+const c = true;
 
-console.log(a <= b); //result true
+console.log(a); //result true
+console.log(b); //result true
+console.log(c); //result true
