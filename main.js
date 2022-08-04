@@ -1,10 +1,8 @@
-// 변수 유효범위 (Variable Scope)
-//var, let, const
+//형 변환(Type conversion)
 
-function scope() {
-  if(true) {
-    var a = 123; //var 은 블록레벨이 아닌 함수레벨에서 관리된다.
-  }
-  console.log(a); //result : 123
-}
-scope();
+const a = 1;
+const b = '1';
+
+// Javascript에서는 동등연산자보단 일치연산자를 권장한다.
+console.log(a === b); // 일치 연산자 ===
+console.log(a == b); // 동등 연산자 ==
