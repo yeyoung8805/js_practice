@@ -3,8 +3,8 @@
 
 const a = 7;
 
+double(); // (result) uncaught TypeError : double is not a function
+
 const double = function () {
   console.log(a * 2);
 }
-
-double();
