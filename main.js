@@ -9,5 +9,5 @@ function isEqual(x,y) {
   return x === y;
 }
 
-console.log(isEqual(1,1)); //true
-console.log(isEqual(2,'2')); //false number, string is different
+console.log(isEqual(1,1)); //result true
+console.log(isEqual(2,'2')); //result false => number, string is different
