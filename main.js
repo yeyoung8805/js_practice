@@ -1,11 +1,5 @@
-//삼항 연산자(ternary operator)
+import randomFunc from './getRandom';
 
-const a = 1 < 2; //true
+//조건문 (If statement)
 
-if(a) {
-  console.log('참');
-}else {
-  console.log('거짓');
-}
-
-console.log(a ? '참' : '거짓'); // result 참
+console.log(randomFunc());
