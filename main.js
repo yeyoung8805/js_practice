@@ -1,10 +1,6 @@
-// 할당 연산자(assignment operator)
+// 비교 연산자(comparison operator)
 
-let a = 2; //const는 재할당 불가, let은 재할당 가능
-// a = a + 1;
-// a += 1; //same result as  a = a + 1;
-// a -= 1;
-// a *= 1;
-// a /= 1;
-a %= 1;
-console.log(a);
+const a = 1;
+const b = 1;
+
+console.log(a === b); //result : true  // 일치연산자 ===
