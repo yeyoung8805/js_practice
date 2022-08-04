@@ -1,22 +1,10 @@
-// 즉시실행함수
-// IIFE, Immediately-Invoked Function Expression
+//호이스팅 (Hoisting)
+//함수 선언부가 유효범위 최상단으로 끌어올려지는 현상
 
-
-//기존 방식
 const a = 7;
-function double() {
+
+const double = function () {
   console.log(a * 2);
 }
+
 double();
-
-
-//1. 즉시실행함수 의 형식이다!
-(function () {
-  console.log(a * 2);
-}) ();
-
-//2. 즉시실행함수 의 다른 형태이다! (위와 똑같은 기능을 한다.)
-//1.보다 2.방법이 더 권장된다.
-(function () {
-  console.log(a * 2);
-}());
