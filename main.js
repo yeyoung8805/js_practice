@@ -2,9 +2,9 @@
 //var, let, const
 
 function scope() {
-  console.log(a); //Error : a is not defined
+  console.log(a); //undefined
   if(true) {
-    const a = 123; //const 뿐만 아니라 let 도 마찬가지
+    var a = 123; //var 은 블록레벨이 아닌 함수레벨에서 관리된다.
   }
 }
 scope();
