@@ -3,8 +3,13 @@
 
 const ulEl = document.querySelector('ul');
 
-for(let i = 0; i < 3; i += 1) {
+for(let i = 0; i < 10; i += 1) {
   const li = document.createElement('li'); //메모리 상에 li 를 만든 상태(눈에 보이진 않지만)
   li.textContent = `list-${i + 1}`; //li의 내용물로 list-1, list-2, list-3 나오게 함
+  if((i + 1) % 2 == 0) { // i+1 이 짝수인 경우
+    li.addEventListener('click', function() {
+      console.log(li.textContent);
+    })
+  }
   ulEl.appendChild(li); //ul 안에 child로 li 들 추가함
 }
