@@ -7,8 +7,8 @@ console.log(typeof {}); //객체
 console.log(typeof []); //배열
 
 function getType(data) {
-  return Object.prototype.toString.call(data);
+  return Object.prototype.toString.call(data).slice(8, -1); //잘라서 가져오기 시작하는 index 8 로부터 맨 뒤의 ]을 자르기 위한 -1 정의
 }
 
-console.log(getType(123)); //result : [object Number]
-console.log(getType(false)); //result : [object Boolean]
+console.log(getType(123)); //result : Number
+console.log(getType(false)); //result : Boolean
