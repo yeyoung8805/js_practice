@@ -1,11 +1,8 @@
-//형 변환(Type conversion)
+// 함수 복습
 
-// Truthy (참 같은 값)
-// true, {}, [], 1, 2, 'false', -12, '3.14' ...
-
-// Falsy (거짓 같은 값) : 굉장히 많은 truthy 보다 개수가 훨씬 적다. 제한적이다.
-// false, '', null, undefined, 0, -0, NaN (Not a Number)
-
-if(undefined) { //Falsy
-  console.log(123);
+function sum(x, y) { //x,y 라는 매개변수
+  console.log(x + y);
 }
+
+sum(1, 3); // 1,3 이라는 인수
+sum(4, 12);
