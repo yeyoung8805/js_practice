@@ -3,8 +3,9 @@
 
 const a = 7;
 
-double(); // (result) uncaught TypeError : double is not a function
+double();
 
-const double = function () {
+//함수 선언부가 double();호출부보다 아래있어도 유효범위 최상단으로 끌어올려진다.
+function double() {
   console.log(a * 2);
 }
