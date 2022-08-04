@@ -12,3 +12,6 @@ function getType(data) {
 
 console.log(getType(123)); //result : Number
 console.log(getType(false)); //result : Boolean
+console.log(getType(null)); //result : Null
+console.log(getType({})); //result : Object
+console.log(getType([])); //result : Array
