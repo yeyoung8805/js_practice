@@ -1,20 +1,6 @@
-import randomFunc from './getRandom';
+//반복문 (For statement)
+//for ( 시작조건; 종료조건; 변화조건) {}
 
-//조건문 (Switch statement)
-
-const a = randomFunc();
-
-switch(a) {
-  case 0 :
-    console.log('a is 0');
-    break;
-  case 2 :
-    console.log('a is 2');
-    break;
-  case 4 :
-    console.log('a is 4');
-    break;
-  default :
-    console.log('rest...');
-    break;
+for(let i = 0; i < 3; i += 1) {
+  console.log(i);
 }
