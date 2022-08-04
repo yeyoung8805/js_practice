@@ -3,4 +3,4 @@
 const a = 1;
 const b = 7;
 
-console.log(a < b); //result true
+console.log(a > b); //result false
