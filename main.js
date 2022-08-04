@@ -9,5 +9,5 @@ console.log('double: ', double(7));
 
 //화살표 익명함수
 //기본적인 로직을 축약형으로 줄일수 있다는 차이점이 있다!
-const doubleArrow = x => 1234;
+const doubleArrow = x => false; //result : false
 console.log('doubleArrow', doubleArrow(7));
