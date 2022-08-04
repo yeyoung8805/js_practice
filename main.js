@@ -2,8 +2,8 @@
 
 //익명함수
 const sum = function (x, y) { //x,y 라는 매개변수
-  console.log(x); //return 이전이기 때문에, 개발자도구 콘솔에 log 가 찍힌다.
   return x + y;
+  console.log(x); //return 이후이므로 함수기능이 종료됐기 때문에, 개발자도구 콘솔에 log 가 찍히지 않는다.
 }
 
 const a = sum(1, 3); // 1,3 이라는 인수
