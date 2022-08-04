@@ -3,8 +3,8 @@
 
 function scope() {
   if(true) {
-    console.log(a); //undefined
     var a = 123; //var 은 블록레벨이 아닌 함수레벨에서 관리된다.
   }
+  console.log(a); //result : 123
 }
 scope();
