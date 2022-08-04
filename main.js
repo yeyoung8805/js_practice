@@ -1,8 +1,7 @@
 // 함수 복습
 
-function sum() {
-  console.log(arguments);
-  return arguments[0] + arguments[1];
+function sum(x, y) {
+  return x + y;
 }
 
-console.log(sum(7, 3)); //Arguments 배열에 7, 3이 각각 0번째, 1번째로 들어간다.
+console.log(sum(7, 3)); //매개변수 x,y를 사용해서 명시해주는게 권장하는 방법이긴 하다.
