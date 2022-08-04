@@ -2,7 +2,7 @@
 
 function sum() {
   console.log(arguments);
-  return;
+  return arguments[0] + arguments[1];
 }
 
 console.log(sum(7, 3)); //Arguments 배열에 7, 3이 각각 0번째, 1번째로 들어간다.
