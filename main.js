@@ -1,9 +1,7 @@
-//JS 데이터
+//String
 
-//String : "", '', ``
-//Number
-//Boolean : true, false
-//undefined
-//null
-//Array: []
-//Object: {}
+const result = 'Hello world'.indexOf('world');
+console.log(result); //result : 6
+
+// String.prototype.indexOf()
+
