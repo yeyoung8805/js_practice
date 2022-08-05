@@ -1,7 +1,7 @@
 //String
 
-const result = 'Hello world'.indexOf('world');
-console.log(result); //result : 6
+const result = 'Hello world'.indexOf('bye');
+console.log(result); //result : -1
 
 // String.prototype.indexOf()
 
