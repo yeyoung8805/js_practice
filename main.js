@@ -6,7 +6,7 @@ const timer = {
   name: 'Heropy!!',
   timeout: function () {
     //setTimeout(함수,시간)
-    setTimeout(function() { //일반함수 내의 this는 setTimeout()내의 범위에서만 찾으므로 name에 도달할 수 없다!!
+    setTimeout(() => { //화살표 함수는 자신이 선언된 함수범위인 timeout: 이 timer 안에서 호출되고 있기에 this는 timer 이다!!
       console.log(this.name);
     }, 2000);
   }
