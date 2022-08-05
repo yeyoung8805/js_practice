@@ -1,3 +1,3 @@
-const str = '0123';
+const str = 'Hello world!';
 
-console.log(str.length); //문자데이터 str의 길이
+console.log(str.indexOf('universe') !== -1); //result : false
