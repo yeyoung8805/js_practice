@@ -1,4 +1,3 @@
 const str = 'Hello world!';
 
-//slice(beginIndex, endIndex);  // endIndex is optional
-console.log(str.slice(6, 11)); //result : world
+console.log(str.replace('world', 'universe')); //replace(searchVal, replaceVal);
