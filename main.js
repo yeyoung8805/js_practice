@@ -1,29 +1,19 @@
-//ES6 Classes
-
-// function User(first, last) {
-//   this.firstName = first;
-//   this.lastName = last;
-// }
-
-// User.prototype.getFullName = function () {
-//   return `${this.firstName} ${this.lastName}`;
-// }
-
-//class 사용한 새로운 문법으로 구현한다!!(React 등도 비슷함)
-class User {
-  constructor(first, last) {
-    this.firstName = first;
-    this.lastName = last; 
-  }
-  getFullName() {
-    return `${this.firstName} ${this.lastName}`;
+class Vehicle {
+  constructor(name, wheel) {
+    this.name = name;
+    this.wheel = wheel;
   }
 }
 
-const heropy = new User('Heropy', 'Kim');
-const amy = new User('Amy', 'Clarke');
-const neo = new User('Neo', 'Smith');
+class Bicycle extends Vehicle {
+  constructor(name, wheel) {
+    super(name, wheel);
+  }
+}
 
-console.log(heropy);
-console.log(amy.getFullName());
-console.log(neo.getFullName());
+class Car extends Vehicle {
+  constructor(name, wheel, license) {
+    super(name, wheel);
+    this.license = license;
+  }
+}
