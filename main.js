@@ -1,7 +1,3 @@
-//String
+const str = '0123';
 
-const result = 'Hello world'.indexOf('bye');
-console.log(result); //result : -1
-
-// String.prototype.indexOf()
-
+console.log(str.length); //문자데이터 str의 길이
