@@ -4,6 +4,6 @@
 // clearTimeout() : 설정된 Timeout 함수를 종료
 // clearInterval() : 설정된 Interval 함수를 종료
 
-setTimeout(function() {
+setTimeout(() => { //화살표 함수 
   console.log('YeYoung');
 }, 3000);
