@@ -1,14 +1,14 @@
-//this
-//일반(Normal) 함수는 '호출 위치에서' 따라 this 정의!
-//화살표(Arrow) 함수는 '자신이 선언된 함수 범위에서'(블록 내에서) this 정의!
+//ES6 Classes
 
-const timer = {
-  name: 'Heropy!!',
-  timeout: function () {
-    //setTimeout(함수,시간)
-    setTimeout(() => { //화살표 함수는 자신이 선언된 함수범위인 timeout: 이 timer 안에서 호출되고 있기에 this는 timer 이다!!
-      console.log(this.name); //Heropy!! 가 정확히 콘솔에 찍힌다.
-    }, 2000);
-  }
+const heropy = {
+  name: 'Heropy',
+  normal: function () {
+    console.log(this.name);
+  },
+  arrow : () => {
+    console.log(this.name);
+  } 
 };
-timer.timeout();
+
+heropy.normal();
+heropy.arrow();
