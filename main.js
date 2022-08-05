@@ -1,15 +1,18 @@
 //ES6 Classes
 
-const heropy = {
-  name: 'Heropy',
-  //normal: function () {  //ES6 class 문법에서 위와 아래는 같다.
-  normal() { 
-    console.log(this.name);
-  },
-  arrow : () => {
-    console.log(this.name);
-  } 
-};
+function User(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+}
 
-heropy.normal();
-heropy.arrow();
+User.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`;
+}
+
+const heropy = new User('Heropy', 'Kim');
+const amy = new User('Amy', 'Clarke');
+const neo = new User('Neo', 'Smith');
+
+console.log(heropy);
+console.log(amy.getFullName());
+console.log(neo.getFullName());
