@@ -7,7 +7,7 @@ const timer = {
   timeout: function () {
     //setTimeout(함수,시간)
     setTimeout(() => { //화살표 함수는 자신이 선언된 함수범위인 timeout: 이 timer 안에서 호출되고 있기에 this는 timer 이다!!
-      console.log(this.name);
+      console.log(this.name); //Heropy!! 가 정확히 콘솔에 찍힌다.
     }, 2000);
   }
 };
