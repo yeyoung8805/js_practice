@@ -13,4 +13,4 @@ const heropy = {
 };
 
 heropy.normal(); //result : heropy
-heropy.arrow(); //result : undefined
+heropy.arrow(); //result : undefined //일반함수와 달리 화살표함수는 호출된 위치와는 관련이 없다.
