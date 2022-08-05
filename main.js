@@ -1,12 +1,13 @@
-const pi = 3.14159265358979;
-console.log(pi); //result : 3.14159265358979
+console.log('abs: ', Math.abs(-12)); //abs : 절대값
 
-const str = pi.toFixed(2);
-console.log(str); //result : 3.14  //소수점 2자리까지만 남기고 다 버림
-console.log(typeof str); //result : String
+console.log('min: ', Math.min(2, 8));
 
-const integer = parseInt(str);
-const float = parseFloat(str); 
-console.log(integer); //result : 3  //정수로 반환 
-console.log(float); //result : 3.14  //소수점숫자도 유지하면서 문자를 숫자로 변환
-console.log(typeof integer, typeof float); //result : number, number
+console.log('max: ', Math.max(2, 8));
+
+console.log('ceil: ', Math.ceil(3.14)); //ceil : 소수점 첫째자리에서 정수자리로 올림처리
+
+console.log('floor: ', Math.floor(3.14)); //floor :소수점 첫째자리에서 내림처리하여 정수만 남김
+
+console.log('round: ', Math.round(3.14)); //round : 정수를 기준으로 반올림. 예를 들어 3.66 -> 4가 된다.
+
+console.log('random: ', Math.random()); //random : 난수를 반환
