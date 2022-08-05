@@ -14,3 +14,11 @@ const heropy = {
 
 heropy.normal(); //result : heropy
 heropy.arrow(); //result : undefined //일반함수와 달리 화살표함수는 호출된 위치와는 관련이 없다.
+
+const amy = {
+  name: 'Amy',
+  normal: heropy.normal,
+  arrow: heropy.arrow
+};
+amy.normal(); //result : Amy  //this is name:'Amy'
+amy.arrow(); //result : undefined
