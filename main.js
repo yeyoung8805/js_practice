@@ -7,4 +7,4 @@ const yeyoung = {
   }
 };
 
-console.log(yeyoung);
+console.log(yeyoung.getFullName());
