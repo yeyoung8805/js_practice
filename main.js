@@ -1,32 +1,10 @@
-//생성자 함수 (prototype)
-const yeyoung = {
-  firstName: 'YeYoung',
-  lastName: 'Kim',
-  getFullName: function () {
-    return `${this.firstName} ${this.lastName}`;
-  }
+function user(first, last) {
+  this.firstName = first;
+  this.lastName = last;
 };
 
-console.log(yeyoung.getFullName());
+const yeyoung = new user('Yeyoung', 'Kim'); //user()는 생성자 함수
 
+console.log(yeyoung);
 
-const amy = {
-  firstName: 'Amy',
-  lastName: 'Clarke',
-  getFullName: function () {
-    return `${this.firstName} ${this.lastName}`;
-  }
-};
-
-console.log(amy.getFullName());
-
-
-const neo = {
-  firstName: 'Neo',
-  lastName: 'Smith',
-  getFullName: function () {
-    return `${this.firstName} ${this.lastName}`;
-  }
-};
-
-console.log(neo.getFullName());
+// const yeyoung1 = {}; // {}로 나타내는 방식이 리터럴 방식
