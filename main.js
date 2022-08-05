@@ -2,7 +2,8 @@
 
 const heropy = {
   name: 'Heropy',
-  normal: function () {
+  //normal: function () {  //ES6 class 문법에서 위와 아래는 같다.
+  normal() { 
     console.log(this.name);
   },
   arrow : () => {
