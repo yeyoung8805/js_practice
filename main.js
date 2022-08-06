@@ -1,9 +1,8 @@
-//.concat()
-//두개의 배열을 병합한다. 단, 원본 배열에는 변화가 없다.
+//.forEach()
 
 const numbers = [1, 2, 3, 4];
 const fruits = ['Apple', 'Banana', 'Cherry'];
 
-console.log(numbers.concat(fruits)); // result : [1, 2, 3, 4, 'Apple', 'Banana', 'Cherry']
-console.log(numbers);
-console.log(fruits);
+fruits.forEach(function (element, index, array) { //function ~부터는 콜백함수이다.
+    console.log(element, index, array); // 콘솔에 배열의 크기(length) 만큼 찍힌다.
+});
