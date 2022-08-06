@@ -3,7 +3,7 @@
 const numbers = [1, 2, 3, 4];
 const fruits = ['Apple', 'Banana', 'Cherry'];
 
-const a = fruits.forEach(function (fruit, index) { 
+const a = fruits.forEach(function (fruit, index) { //forEach() 는 따로 반환하는 값 return 이 없다.
 	console.log(`${fruit}-${index}`); 
 });
 console.log(a);
