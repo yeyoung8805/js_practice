@@ -13,4 +13,5 @@ const user = {
 
 // localStorage.setItem('user', user);
 // JSON.stringify(user);
-localStorage.setItem('user', JSON.stringify(user));
+localStorage.setItem('user', JSON.stringify(user)); //String 형태로 localStorage에 저장된다.
+console.log(JSON.parse(localStorage.getItem('user'))); //자바스크립트에서 해석되는 형태로 가져온다.
