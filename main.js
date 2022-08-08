@@ -7,6 +7,7 @@ import _ from 'lodash';
 //참조형 데이터
 //얕은 복사와 깊은 복사 개념 이해 필요
 //얕은 복사(shallow copy), 깊은 복사(deep copy)
+//참조 데이터 {}(객체) 안에 [](배열) 라는 또다른 참조데이터가 들어있다면, 깊은복사를 고려해보는게 좋다.
 const user = {
   name: 'yeyoung',
   age: 88,
