@@ -1,15 +1,19 @@
+//구조 분해 할당 (Destructuring assignment)
+//비구조화 할당
+
 const user = {
   name: 'Yeyoung',
   age: 88,
   email: 'yyk8805@naver.com'
 };
 
-const keys = Object.keys(user); //key(property)만 추출해내어 배열을 만듦
-console.log(keys);
-// ['name', 'age', 'email']
+const {name, age, email, address} = user;
 
-console.log(user['email']); //email 이라는 key의 value를 받아오고자 할때
+console.log(`사용자의 이름은 ${name} 입니다.`);
+console.log(`${name}의 나이는 ${age}세입니다.`);
+console.log(`${name}의 이메일 주소는 ${email} 입니다.`);
+console.log(address);
 
-const values = keys.map(key => user[key]); //keys 라는 배열 데이터에는 map()을 사용할 수 있다.
-                                           //map(콜백함수) : 3번 실행되는, 콜백함수 결과가 map이라는 매개변수에 들어간다.
-console.log(values);
+const fruits = ['Apple', 'Banana', 'Cherry'];
+const [a,b,c,d] = fruits;
+console.log(a,b,c,d);
