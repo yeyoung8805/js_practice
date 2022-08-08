@@ -18,5 +18,5 @@ console.log(address); //address default값 Korea가 할당돼있지만, const ad
 
 // 객체데이터 뿐만아니라 '배열 데이터'도 구조분해할당 가능하다!
 const fruits = ['Apple', 'Banana', 'Cherry'];
-const [,b] = fruits; //a는 필요없지만 b가 두번째 순서이기 때문에 앞에 쉼표(,)는 남겨둬야 한다!!
+const [, ,b] = fruits; //a는 필요없지만 b가 두번째 순서이기 때문에 앞에 쉼표(,)는 남겨둬야 한다!!
 console.log(b);
