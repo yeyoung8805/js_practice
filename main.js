@@ -11,7 +11,7 @@ const user = {
   emails: ['yyk8805@naver.com']
 }
 
-const copyUser = Object.assign({}, user); //복사 : 대상객체 {} 에다가 출처객체 user 의 내용을 담는다.
+const copyUser = {...user}; //전개연산자 : 빈 {}객체에 user객체의 속성, 값들을 전개해서 넣는다.
 console.log(copyUser === user); //false : copyUser가 바라보는 새로운 메모리 주소와, user의 메모리 주소는 다르다.
 
 user.age = 22;
