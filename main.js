@@ -8,9 +8,8 @@ const user = {
   address: 'Singapore'
 };
 
-const {name, age, address = 'Korea'} = user; //구조분해할당 (=비구조화 할당)의 예
+const {name: yeyoung, age, address = 'Korea'} = user; //구조분해할당 (=비구조화 할당)의 예
 //E.g, user.address
-const yeyoung = name; //변수명을 다시 할당받아서 사용가능
 
 console.log(`사용자의 이름은 ${yeyoung} 입니다.`);
 console.log(`${yeyoung}의 나이는 ${age}세입니다.`);
