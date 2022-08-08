@@ -2,6 +2,8 @@
 //원시데이터 : String, Number, Boolean, undefined, null
 //참조형 데이터 : Object, Array, Function
 
+//참조형 데이터
+//얕은 복사와 깊은 복사 개념 이해 필요
 let a = {k: 1};
 let b = {k: 1};
 console.log(a, b, a === b); //false : 왜냐하면 서로 다른 메모리 주소를 바라보고 있다.
