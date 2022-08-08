@@ -11,8 +11,8 @@ const user = {
   emails: ['yyk8805@naver.com']
 }
 
-const copyUser = {...user}; //전개연산자 : 빈 {}객체에 user객체의 속성, 값들을 전개해서 넣는다.
-console.log(copyUser === user); //false : copyUser가 바라보는 새로운 메모리 주소와, user의 메모리 주소는 다르다.
+const copyUser = {...user}; //전개(Spread)연산자 : 빈 {}객체에 user객체의 속성, 값들을 전개해서 넣는다.
+console.log(copyUser === user); //false
 
 user.age = 22;
 console.log('user', user);
