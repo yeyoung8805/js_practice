@@ -11,8 +11,13 @@ const user = {
   ],
 };
 
-// localStorage.setItem('user', user);
-// JSON.stringify(user);
-localStorage.setItem('user', JSON.stringify(user)); //String 형태로 localStorage에 저장된다.
-console.log(JSON.parse(localStorage.getItem('user'))); //자바스크립트에서 해석되는 형태로 가져온다.
-localStorage.removeItem('user'); //콘솔에는 찍히더라도 F12 > Application > localStorage 에는 값과 밸류가 사라진다.
+localStorage.setItem('user', JSON.stringify(user));
+console.log(JSON.parse(localStorage.getItem('user')));
+
+// age 만 85 에서 22로 변경하여 저장하고 싶을때
+const str = localStorage.getItem('user');
+const obj = JSON.parse(str); //JS에서 변경할 수 있는 데이터 형식으로 바꿈
+obj.age = 22;
+console.log(obj);
+
+localStorage.setItem('user', JSON.stringify(obj)); //localStorage에 저장할땐 다시 stringify문자화 한다.
