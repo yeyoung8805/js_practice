@@ -1,13 +1,18 @@
-//.splice()
-//원본 배열이 수정되므로 주의!
+const userAge = {
+  // key(property): value
+  name: 'Yeyoung',
+  age: 88
+};
+const userEmail = {
+  name: 'Yeyoung',
+  email: 'yyk8805@naver.com'
+};
 
-const numbers = [1, 2, 3, 4];
-const fruits = ['Apple', 'Banana', 'Cherry'];
+const target = Object.assign(userAge, userEmail); //assign 은 정적(static) 메소드  //Object.assign(대상객체, 출처객체);
+console.log(target);
+console.log(userAge);
+console.log(target == userAge);
 
-numbers.splice(2, 2, 999); //splice(index, count, addItem); = 인덱스번호 2번에서 2개를 지운다. 즉 3,4가 삭제된다. 그리고 그 자리에 999라는 숫자를 끼워넣는다.
-
-console.log(numbers); // result : [1, 2, 999] 
-
-//Apply splice() for fruits array
-fruits.splice(2, 0, 'Melon'); //Banana 와 Cherry 사이에 새로운 아이템 Melon을 추가한다.
-console.log(fruits);
+const a = { k: 123 }
+const b = { k: 123 } //a와 b는 서로 다른 메모리 주소를 바라보고 있다.
+console.log(a === b) //주의! 똑같이 생겼음에도 불구하고 === 일치연산자 결과가 false 이다. (서로 다른 객체이기 때문이다.)
