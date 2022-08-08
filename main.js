@@ -1,19 +1,14 @@
-const userAge = {
-  // key(property): value
+const user = {
   name: 'Yeyoung',
-  age: 88
-};
-const userEmail = {
-  name: 'Yeyoung',
+  age: 88,
   email: 'yyk8805@naver.com'
 };
 
-//{} 로 대상객체를 표현하는것은, 새로운 객체를 만들고 싶을때 이렇게 함
-const target = Object.assign({}, userAge, userEmail); // Object.assign(대상객체, 출처객체(여러개 가능));
-console.log(target);
-console.log(userAge);
-console.log(target === userAge); //result : false
+const keys = Object.keys(user);
+console.log(keys);
+// ['name', 'age', 'email']
 
-const a = { k: 123 }
-const b = { k: 123 } //a와 b는 서로 다른 메모리 주소를 바라보고 있다.
-console.log(a === b) //주의! 똑같이 생겼음에도 불구하고 === 일치연산자 결과가 false 이다. (서로 다른 객체이기 때문이다.)
+console.log(user['email']);
+
+const values = keys.map(key => user[key]);
+console.log(values);
