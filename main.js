@@ -1,18 +1,17 @@
 import _ from 'lodash';
 
-const usersA = [
+const users = [
   {userId: '1', name: 'HEROPY'},
-  {userId: '2', name: 'Neo'}
+  {userId: '2', name: 'Neo'},
+  {userId: '3', name: 'Amy'},
+  {userId: '4', name: 'Evan'},
+  {userId: '5', name: 'Lewis'},
 ];
 
-const usersB = [
-  {userId: '1', name: 'HEROPY'},
-  {userId: '3', name: 'Amy'}
-];
+const foundUser = _.find(users, {name: 'Amy'});
+const foundUserIndex = _.findIndex(users, {name: 'Amy'});
+console.log(foundUser); //{userId:'3', name: 'Amy'}
+console.log(foundUserIndex); //2
 
-const usersC = usersA.concat(usersB); //concat() : 두 개의 배열을 합쳐서 새로운 객체 배열을 반환한다. //중복되는 데이터가 발생할 수 있다.
-console.log('concat', usersC);
-console.log('uniqBy', _.uniqBy(usersC, 'userId')); //uniqBy(중복들어간 배열, 중복을 제거할 속성) : 중복된 데이터를 제거할 수 있다.
-
-const usersD = _.unionBy(usersA, usersB, 'userId'); //unionBy(합칠배열1, 합칠배열2, 중복제거할 고유 속성) : 합치는 과정에서 중복 데이터를 제거한다.
-console.log('unionBy', usersD);
+_.remove(users, {name: 'HEROPY'});
+console.log(users); //(4) {userId: '2', name: 'Neo'},{userId: '3', name: 'Amy'},{userId: '4', name: 'Evan'},{userId: '5', name: 'Lewis'},
