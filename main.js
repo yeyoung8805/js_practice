@@ -1,11 +1,10 @@
 // 전개연산자 (Spread)
 
-const fruits = ['Apple', 'Banana', 'Cherry'];
+const fruits = ['Apple', 'Banana', 'Cherry', 'Orange']; //Orange 항목을 추가했다.
 console.log(fruits);
 console.log(...fruits); //전개연산자 사용
-console.log('Apple', 'Banana', 'Cherry'); //전개연산자 사용과 같은 결과
 
-function toObject(a, b, c) {
+function toObject(a, b, ...c) { //...c는 "Rest parameter"로서 나머지 변수들을 모두 포함한다.
   return {
     a: a,
     b: b,
@@ -13,4 +12,3 @@ function toObject(a, b, c) {
   }
 }
 console.log(toObject(...fruits));
-console.log(toObject(fruits[0], fruits[1], fruits[2])); //전개연산자 사용과 같은 결과
