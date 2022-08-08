@@ -8,10 +8,11 @@ const userEmail = {
   email: 'yyk8805@naver.com'
 };
 
-const target = Object.assign(userAge, userEmail); //assign 은 정적(static) 메소드  //Object.assign(대상객체, 출처객체);
+//{} 로 대상객체를 표현하는것은, 새로운 객체를 만들고 싶을때 이렇게 함
+const target = Object.assign({}, userAge, userEmail); // Object.assign(대상객체, 출처객체(여러개 가능));
 console.log(target);
 console.log(userAge);
-console.log(target == userAge);
+console.log(target === userAge); //result : false
 
 const a = { k: 123 }
 const b = { k: 123 } //a와 b는 서로 다른 메모리 주소를 바라보고 있다.
