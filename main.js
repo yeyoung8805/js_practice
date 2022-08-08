@@ -25,5 +25,5 @@ console.log('------')
 
 user.emails.push('aaa@naver.com');
 console.log(user.emails === copyUser.emails); //false
-console.log('user', user);
-console.log('copyUser', copyUser);
+console.log('user', user); //emails 배열에 aaa@naver.com 메일도 리스트에 들어간다.
+console.log('copyUser', copyUser); //emails 배열에 yyk8805@naver.com 메일 한개만 리스트에 들어간다.
