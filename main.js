@@ -6,4 +6,4 @@ import * as R from './getRandom'; //random 과 user 를 한번에 R(의미없음
 console.log(_.camelCase('the hello world')); //theHelloWorld
 console.log(getType([1,2,3])); //Array
 // console.log(random(), random()); //randomly changed two numbers
-console.log(R);
+console.log(R); //default, random, user 모두 가져온다.

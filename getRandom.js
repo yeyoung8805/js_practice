@@ -6,3 +6,5 @@ export const user = {
   name: 'Yeyoung',
   age: 88
 };
+
+export default 123;
