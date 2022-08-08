@@ -11,10 +11,10 @@ const user = {
   emails: ['yyk8805@naver.com']
 }
 
-const copyUser = user; //copyUser, user은 같은 메모리 주소를 바라보고 있다.
-console.log(copyUser === user); //true
+const copyUser = Object.assign({}, user); //복사 : 대상객체 {} 에다가 출처객체 user 의 내용을 담는다.
+console.log(copyUser === user); //false : copyUser가 바라보는 새로운 메모리 주소와, user의 메모리 주소는 다르다.
 
-user.age = 22; //user.age 만 수정했지만, copyUser.age도 같은 메모리 주소를 바라보고 있기 때문에 수정된다.
+user.age = 22;
 console.log('user', user);
 console.log('copyUser', copyUser);
 
