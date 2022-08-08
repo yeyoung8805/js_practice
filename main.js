@@ -15,3 +15,4 @@ const user = {
 // JSON.stringify(user);
 localStorage.setItem('user', JSON.stringify(user)); //String 형태로 localStorage에 저장된다.
 console.log(JSON.parse(localStorage.getItem('user'))); //자바스크립트에서 해석되는 형태로 가져온다.
+localStorage.removeItem('user'); //콘솔에는 찍히더라도 F12 > Application > localStorage 에는 값과 밸류가 사라진다.
