@@ -1,23 +1,16 @@
-//JSON (JavaScript Object Notation)
-//자바스크립트의 객체 표기법
-import myData from './myData.json';
-
-console.log(myData);
+// Storage (local, session)
+// 1. local storage : 데이터를 반영구적으로 사용 가능
+// 2. session storage : 페이지를 닫을때, 데이터가 사라짐
 
 const user = {
-  'name': "HEROPY",
-  'age': 85,
-  'emails': [
+  name: "HEROPY",
+  age: 85,
+  emails: [
     'thesecon@gmailcom',
     'neo@zillinks.com'
   ],
 };
 
-console.log('user', user);
-
-const str = JSON.stringify(user); //stringify() : JSON 형태로 문자화 시킴
-console.log('str', str); // {"name":"HEROPY","age":85,"emails":["thesecon@gmailcom","neo@zillinks.com"]}
-console.log(typeof str); // string
-
-const obj = JSON.parse(str); //parse() : 문자데이터를 자바스크립트에서 활용할 수 있는 실제 데이터로 변경시켜준다.
-console.log('obj', obj);
+// localStorage.setItem('user', user);
+// JSON.stringify(user);
+localStorage.setItem('user', JSON.stringify(user));
