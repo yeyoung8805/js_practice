@@ -4,11 +4,5 @@ const fruits = ['Apple', 'Banana', 'Cherry', 'Orange']; //Orange 항목을 추�
 console.log(fruits);
 console.log(...fruits); //전개연산자 사용
 
-function toObject(a, b, ...c) { //...c는 "Rest parameter"로서 나머지 변수들을 모두 포함한다.
-  return { //속성의 이름과 변수의 이름이 같을 때 a:a를 a로 단순하게 나타낼 수 있다.
-    a,
-    b,
-    c
-  }
-}
+const toObject = (a, b, ...c) => ({a, b, c}); //화살표 함수 내에서 배열데이터를 반환하려면 ()로 한번 감싸야 한다!!
 console.log(toObject(...fruits)); //c변수엔 배열의 형태로 밸류값들이 들어간다.
