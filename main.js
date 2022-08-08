@@ -20,3 +20,8 @@ console.log('copyUser', copyUser);
 
 console.log('------')
 console.log('------')
+
+user.emails.push('yyy@naver.com'); //user라는 객체의 emails라는 배열 데이터도 참조형이다. 따라서 emails라는 배열은 기존과 같은 메모리 주소를 참조하고 있다.
+console.log(user.emails === copyUser.emails); //true
+console.log('user', user);
+console.log('copyUser', copyUser);
