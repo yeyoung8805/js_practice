@@ -11,10 +11,10 @@ const user = {
   emails: ['yyk8805@naver.com']
 }
 
-const copyUser = user;
+const copyUser = user; //copyUser, user은 같은 메모리 주소를 바라보고 있다.
 console.log(copyUser === user); //true
 
-user.age = 22;
+user.age = 22; //user.age 만 수정했지만, copyUser.age도 같은 메모리 주소를 바라보고 있기 때문에 수정된다.
 console.log('user', user);
 console.log('copyUser', copyUser);
 
