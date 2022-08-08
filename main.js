@@ -1,17 +1,19 @@
-import _ from 'lodash';
+//JSON (JavaScript Object Notation)
+//자바스크립트의 객체 표기법
+const user = {
+  name: "HEROPY",
+  age: 85,
+  emails: [
+    'thesecon@gmailcom',
+    'neo@zillinks.com'
+  ],
+};
 
-const users = [
-  {userId: '1', name: 'HEROPY'},
-  {userId: '2', name: 'Neo'},
-  {userId: '3', name: 'Amy'},
-  {userId: '4', name: 'Evan'},
-  {userId: '5', name: 'Lewis'},
-];
+console.log('user', user);
 
-const foundUser = _.find(users, {name: 'Amy'});
-const foundUserIndex = _.findIndex(users, {name: 'Amy'});
-console.log(foundUser); //{userId:'3', name: 'Amy'}
-console.log(foundUserIndex); //2
+const str = JSON.stringify(user);
+console.log('str', str); // {"name":"HEROPY","age":85,"emails":["thesecon@gmailcom","neo@zillinks.com"]}
+console.log(typeof str); // string
 
-_.remove(users, {name: 'HEROPY'});
-console.log(users); //(4) {userId: '2', name: 'Neo'},{userId: '3', name: 'Amy'},{userId: '4', name: 'Evan'},{userId: '5', name: 'Lewis'},
+const obj = JSON.parse(str);
+console.log('obj', obj);
