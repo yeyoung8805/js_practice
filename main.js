@@ -1,9 +1,18 @@
-import _ from 'lodash'; //from `node_modules`!
-import getType from './getType'; //getType.js //default 키워드가 붙은 파일은 하나의 파일에 하나의 export만 내보낼 수 있다!
-// import {random, user as yeyoung} from './getRandom'; //getRandom.js //default 키워드가 빠진 파일은 여러개의 export 작성 가능!
-import * as R from './getRandom'; //random 과 user 를 한번에 R(의미없음)로 가져오고 싶을때
+import _ from 'lodash';
 
-console.log(_.camelCase('the hello world')); //theHelloWorld
-console.log(getType([1,2,3])); //Array
-// console.log(random(), random()); //randomly changed two numbers
-console.log(R); //default, random, user 모두 가져온다.
+const usersA = [
+  {userId: '1', name: 'HEROPY'},
+  {userId: '2', name: 'Neo'}
+];
+
+const usersB = [
+  {userId: '1', name: 'HEROPY'},
+  {userId: '3', name: 'Amy'}
+];
+
+const usersC = usersA.concat(usersB);
+console.log('concat', usersC);
+console.log('uniqBy', _.uniqBy(usersC, 'userId'));
+
+const usersD = _.unionBy(usersA, usersB, 'userId');
+console.log('unionBy', usersD);
